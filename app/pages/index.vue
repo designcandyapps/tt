@@ -56,7 +56,9 @@ export default{
   mounted(){setTimeout(()=>{this.send()},7800)},
   methods:{
     async send(){
-      const response=await fetch("/api/tt",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:document.querySelector("#prompt").value})});
+      const response=await fetch("https://api.tickettailor.com/v1/events/:2036131",
+        //"/api/tt",
+        {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:document.querySelector("#prompt").value})});
       const data=await response.json(); this.response=data.reply;
       alert("RES00: "+JSON.stringify(data)); alert("RES01: "+this.response); //console.log(data.message.content);
       //document.querySelector("#t").innerText=this.response;
