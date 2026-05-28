@@ -1,0 +1,26 @@
+title: Lorem Ipsum
+description: Lorem ipsum dolor sit amet.
+navigation: true
+hero:
+  title: Innovation for the energy of today and tomorrow
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnatis aliqua ut enim ad minim veniam.
+  orientation: horizontal
+features:
+  title: Lorem ipsum
+  items:
+    - title: Lorem ipsum
+      description: Crashum smashum lorem ipsum.
+    - title: Crashum smashum
+      description: Lorem ipsum crashum smashum.
+    - title: Lorem ipsum
+      description: Crashum smashum lorem ipsum.
+    - title: Crashum smashum
+      description: Lorem ipsum crashum smashum.
+sections:
+  title: Crashum smashum
+mid:
+  title: Lorem ipsum
+bottom:
+  title: Crashum smashum
+lower:
+  title: Lorem ipsum
