@@ -1,13 +1,13 @@
 export default defineEventHandler(async(event)=>{
   const body=await readBody(event);
-  const apiResponse=await fetch("https://api.openai.com/v1/chat/completions",{
-    method:"POST",
+  const apiResponse=await fetch("https://api.tickettailor.com/v1/events/:2036131",{
+    method:"GET",
     headers:{
       "Content-Type":"application/json",
-      "Authorization":`Bearer ${process.env.OPENAI_API_KEY}`
+      "Authorization":`Bearer sk_14995_133548_95cbe0f619ded70f2d57a144acefffc5`
     },
     body:JSON.stringify({
-      model:"gpt-3.5-turbo",
+      //model:"gpt-3.5-turbo",
       messages:[{role:"user",content:body.message}],
     }),
   });
