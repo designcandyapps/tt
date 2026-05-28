@@ -1,6 +1,6 @@
 export default defineEventHandler(async(event)=>{
   const body=await readBody(event);
-  const apiResponse=await fetch("https://api.tickettailor.com/v1/events/2036131",{
+  const apiResponse=await fetch("https://api.tickettailor.com/v1/events/:2036131",{
     method:"POST",
     headers:{
       "Content-Type":"application/json",
