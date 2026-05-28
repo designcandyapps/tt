@@ -7,7 +7,6 @@ export default defineEventHandler(async(event)=>{
       "Authorization":`Bearer sk_14995_133548_95cbe0f619ded70f2d57a144acefffc5`
     },
     body:JSON.stringify({
-      //model:"gpt-3.5-turbo",
       messages:[{role:"user",content:body.message}],
     }),
   });
