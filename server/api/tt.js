@@ -1,5 +1,5 @@
 export default defineEventHandler(async () => {
-  const response = await fetch("https://api.tickettailor.com/v1/events", {
+  const response = await fetch("https://api.tickettailor.com/v1/events/:2036131", {
     headers: {
       Accept: "application/json",
       Authorization:
