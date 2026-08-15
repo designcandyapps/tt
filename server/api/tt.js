@@ -4,6 +4,8 @@ export default defineEventHandler(async()=>{
       Accept:"application/json",
       Authorization:"Basic "+Buffer.from("sk_14995_133548_95cbe0f619ded70f2d57a144acefffc5:").toString("base64")},
   });
-  const data=await response.json(); alert("RES1P: "+JSON.stringify(data));
+  const data=await response.json();
+  alert("Test");
+  //alert("RES1P: "+JSON.stringify(data));
   return data;
 });
